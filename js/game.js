@@ -28,7 +28,7 @@ window.onload = function() {
 			   }, 1000 / 30)
            },
 		   
-		   waitBeforeProceed: () => {
+		   waitBeforeProceed: () => {console.log(status)
 			   if (status !== GAME_OVER) {
 				   const t = new Timer()
 				   t.start(3, function() {
@@ -62,7 +62,6 @@ window.onload = function() {
 				   }
 			   }
 			   else {
-				   throw new Error("")
 				   status = OUT_OF_BOUNDS
 				   
 				   Gil.View.setText("Get Ready...")
@@ -87,7 +86,7 @@ window.onload = function() {
        let ballSpeed        = {x: 15, y: 15}
        let ballDir          = {x: -1, y: 1}
 	   let paddleCpuSpeed   = 4
-	   let text				= "Get Ready!"
+	   let text				= "Pong - an original game by Gil Steiner"
 	   
        function update(playerScore, cpuScore) {
            let nextBallX = status === PLAYING ? ballPos.x + ballDir.x * ballSpeed.x : ballPos.x
