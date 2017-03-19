@@ -215,10 +215,10 @@ window.onload = function() {
        
        return {
            init: () => {
-			  canvas.style.width='100%';
-			  canvas.style.height='100%';
-			  canvas.width  = canvas.offsetWidth;
-			  canvas.height = canvas.offsetHeight;
+			  canvas.style.width='100%'
+			  canvas.style.height='100%'
+			  canvas.width  = canvas.offsetWidth
+			  canvas.height = canvas.offsetHeight
 			   
 			   Gil.Gui.init(canvas, ctx)
 			   
