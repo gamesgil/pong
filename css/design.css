@@ -1,0 +1,10 @@
+#container {
+	position: relative;
+	width: 640px;
+	height: 480px;
+}
+
+canvas {
+	width: inherit;
+	height: inherit;
+}
